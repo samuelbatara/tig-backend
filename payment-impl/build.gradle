@@ -1,0 +1,17 @@
+dependencies {
+  implementation project(':payment-api')
+  implementation project(':booking-api')
+  implementation project(':booking-impl')
+
+  runtimeOnly "org.postgresql:postgresql:${postgresqlVersion}"
+  developmentOnly "org.springframework.boot:spring-boot-devtools:${springBootVersion}"
+  implementation "org.springframework.boot:spring-boot-starter-data-jpa:${springBootVersion}"
+  implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
+  implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+}
+
+dependencyManagement {
+  imports {
+    mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+  }
+}

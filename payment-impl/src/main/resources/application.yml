@@ -1,0 +1,17 @@
+server:
+  port: 8200
+
+spring:
+  application:
+    name: "tigpay"
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    platform: postgresql
+    url: jdbc:postgresql://localhost:5432/data
+    username: samuel
+    password: samuel
+    driverClassName: org.postgresql.Driver

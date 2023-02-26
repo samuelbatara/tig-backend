@@ -1,0 +1,11 @@
+rootProject.name = 'tig-backend'
+include 'booking-api'
+include 'booking-impl'
+include 'user-api'
+include 'user-impl'
+include 'product-api'
+include 'product-impl'
+include 'payment-api'
+include 'payment-impl'
+include 'naming-server'
+
